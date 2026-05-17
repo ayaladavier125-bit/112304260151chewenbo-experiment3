@@ -114,4 +114,4 @@ with gr.Blocks(title="CNN 手写数字识别") as demo:
             gr.Button("🔍 识别图片").click(predict_digit, inputs=image_upload, outputs=gr.Label(num_top_classes=3))
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
+    demo.launch(server_name="127.0.0.1", server_port=8888)
